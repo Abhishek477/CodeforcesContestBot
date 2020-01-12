@@ -1,0 +1,28 @@
+{                                                                                                                                            
+  name: codeforcescontestbot,                                                                                                                
+  version: 1.0.0,                                                                                                                            
+  "description": "Automatically parse and test your code against all sample test cases of a Codeforces contest",                             
+  main: script.js,                                                                                                                           
+  scripts: {                                                                                                                                 
+    test: echo \"Error: no test specified\" && exit 1                                                                                        
+  },                                                                                                                                         
+  repository: {                                                                                                                              
+    type: git,                                                                                                                               
+    url: git+https://github.com/rachitiitr/CodeforcesContestBot.git                                                                          
+  },                                                                                                                                         
+  keywords: [                                                                                                                                
+    javascript,                                                                                                                              
+    competitive-programming,                                                                                                                 
+    codeforces                                                                                                                               
+  ],                                                                                                                                         
+  author: Rachit Jain (@rachitiitr),                                                                                                         
+  license: MIT,                                                                                                                              
+  bugs: {                                                                                                                                    
+    url: https://github.com/rachitiitr/CodeforcesContestBot/issues                                                                           
+  },                                                                                                                                         
+  homepage: https://github.com/rachitiitr/CodeforcesContestBot#readme,                                                                       
+  dependencies: {                                                                                                                            
+    axios: ^0.19.1,                                                                                                                          
+    cheerio: ^1.0.0-rc.3                                                                                                                     
+  }                                                                                                                                          
+}    
