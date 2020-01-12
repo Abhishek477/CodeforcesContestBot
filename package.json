@@ -22,5 +22,8 @@
     "url": "https://github.com/rachitiitr/CodeforcesContestBot/issues"
   },
   "homepage": "https://github.com/rachitiitr/CodeforcesContestBot#readme",
-  "dependencies": {}
+  "dependencies": {
+    "axios": "^0.19.1",
+    "cheerio": "^1.0.0-rc.3"
+  }
 }
