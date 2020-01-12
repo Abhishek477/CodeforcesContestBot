@@ -2,8 +2,6 @@ const axios = require('axios');
 const cheerio = require('cheerio');
 var fs = require('fs');
 
-url = 'http://codeforces.com/contest/1256/problem/C'
-
 let getTestCaseFromProblemHtml = (dir, html) => {
   data = [];
   fs.copyFileSync(`${dir}/../template.cpp`, `${dir}/sol.cpp`);
@@ -47,18 +45,13 @@ function getTestCaseFromProblemUrl(url) {
 
   axios.get(url)
     .then(response => {
-      // console.log(response);
       getTestCaseFromProblemHtml(dir, response.data);
     }
     )
     .catch(err => console.log(err));
 }
 
-// getTestCaseFromProblemUrl(url);
 
-contest_url = 'http://codeforces.com/contest/1256';
-
-// ''
 let getTotalProblemsFromContestHtml = (html) => {
   data = [];
   const $ = cheerio.load(html);
@@ -72,6 +65,5 @@ let getTotalProblemsFromContestHtml = (html) => {
 
 axios.get(process.env.CF_CONTEST)
     .then(response => {
-      // console.log(response);
       getTotalProblemsFromContestHtml(response.data);
     });
