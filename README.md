@@ -13,3 +13,5 @@ node script.js
 # write code in B/sol.cpp
 ./runall.sh B
 ```
+
+> I would love if you guys can raise Pull Requests to make this Open Source Bot really powerful. I wrote this late one night when I wasn't able to sleep, and it has immense scope of improvement and error handling.
